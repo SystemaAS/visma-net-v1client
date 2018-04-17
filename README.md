@@ -22,7 +22,7 @@ Example:
 		swagger-codegen generate  \
 		     -i https://integration.visma.net/API-index/doc/swagger \
 		     -l java \
-		     -c /Users/fredrikmoller/git/visma-net-proxy/swagger-java-config.json \
+		     -c /Users/fredrikmoller/git/visma-net-v1client/swagger-java-config.json \
 		     -o /Users/fredrikmoller/git/visma-net-v1client \
 		     --instantiation-types array=ArrayList,map=HashMap \
 		     --type-mappings array=List,map=Map,string=String
