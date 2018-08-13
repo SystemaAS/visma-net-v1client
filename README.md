@@ -28,3 +28,6 @@ Example:
 		     --type-mappings array=List,map=Map,string=String
 
  More info on swagger: https://swagger.io/docs/swagger-tools/#installation-11
+ 
+ Misc:
+ To view the swagger-definitions; Safari is more forgiving, compared to Chrome, when rendering the swagger.json in browser.
