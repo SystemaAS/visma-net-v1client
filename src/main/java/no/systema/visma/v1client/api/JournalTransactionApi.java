@@ -66,7 +66,7 @@ public class JournalTransactionApi {
         // create path and map variables
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("journalTransactionNumber", journalTransactionNumber);
-        String path = UriComponentsBuilder.fromPath("/controller/api/v1/journaltransaction/{journalTransactionNumber}/attachment").buildAndExpand(uriVariables).toUriString();
+        String path = UriComponentsBuilder.fromPath("/controller/api/v2/journaltransaction/{journalTransactionNumber}/attachment").buildAndExpand(uriVariables).toUriString();
         
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
@@ -110,7 +110,7 @@ public class JournalTransactionApi {
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("journalTransactionNumber", journalTransactionNumber);
         uriVariables.put("lineNumber", lineNumber);
-        String path = UriComponentsBuilder.fromPath("/controller/api/v1/journaltransaction/{journalTransactionNumber}/{lineNumber}/attachment").buildAndExpand(uriVariables).toUriString();
+        String path = UriComponentsBuilder.fromPath("/controller/api/v2/journaltransaction/{journalTransactionNumber}/{lineNumber}/attachment").buildAndExpand(uriVariables).toUriString();
         
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
@@ -198,7 +198,7 @@ public class JournalTransactionApi {
         // create path and map variables
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("journalTransactionNumber", journalTransactionNumber);
-        String path = UriComponentsBuilder.fromPath("/controller/api/v1/journaltransaction/{journalTransactionNumber}").buildAndExpand(uriVariables).toUriString();
+        String path = UriComponentsBuilder.fromPath("/controller/api/v2/journaltransaction/{journalTransactionNumber}").buildAndExpand(uriVariables).toUriString();
         
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
@@ -277,7 +277,7 @@ public class JournalTransactionApi {
         // create path and map variables
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("journalTransactionNumber", journalTransactionNumber);
-        String path = UriComponentsBuilder.fromPath("/controller/api/v1/journaltransaction/{journalTransactionNumber}").buildAndExpand(uriVariables).toUriString();
+        String path = UriComponentsBuilder.fromPath("/controller/api/v2/journaltransaction/{journalTransactionNumber}").buildAndExpand(uriVariables).toUriString();
         
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
@@ -316,7 +316,7 @@ public class JournalTransactionApi {
         // create path and map variables
         final Map<String, Object> uriVariables = new HashMap<String, Object>();
         uriVariables.put("journalTransactionNumber", journalTransactionNumber);
-        String path = UriComponentsBuilder.fromPath("/controller/api/v1/journaltransaction/{journalTransactionNumber}/action/release").buildAndExpand(uriVariables).toUriString();
+        String path = UriComponentsBuilder.fromPath("/controller/api/v2/journaltransaction/{journalTransactionNumber}/action/release").buildAndExpand(uriVariables).toUriString();
         
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
