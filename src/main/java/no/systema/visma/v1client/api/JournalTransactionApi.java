@@ -149,7 +149,7 @@ public class JournalTransactionApi {
     public List<JournalTransactionDto> journalTransactionGetAllJournalTransactions(String greaterThanValue, Integer numberToRead, Integer skipRecords, String orderBy, String lastModifiedDateTime, String lastModifiedDateTimeCondition, String customerSupplierStart, String customerSupplierEnd, Integer released, Integer pageNumber, Integer pageSize) throws RestClientException {
         Object postBody = null;
         
-        String path = UriComponentsBuilder.fromPath("/controller/api/v1/journaltransaction").build().toUriString();
+        String path = UriComponentsBuilder.fromPath("/controller/api/v2/journaltransaction").build().toUriString();
         
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
@@ -232,7 +232,7 @@ public class JournalTransactionApi {
             throw new HttpClientErrorException(HttpStatus.BAD_REQUEST, "Missing the required parameter 'journalTransaction' when calling journalTransactionPost");
         }
         
-        String path = UriComponentsBuilder.fromPath("/controller/api/v1/journaltransaction").build().toUriString();
+        String path = UriComponentsBuilder.fromPath("/controller/api/v2/journaltransaction").build().toUriString();
         
         final MultiValueMap<String, String> queryParams = new LinkedMultiValueMap<String, String>();
         final HttpHeaders headerParams = new HttpHeaders();
