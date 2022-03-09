@@ -87,6 +87,9 @@ public class SupplierInvoiceUpdateDto {
 
   @JsonProperty("branchNumber")
   private DtoValueString branchNumber = null;
+  
+  @JsonProperty("supplierTaxZone")
+  private DtoValueString supplierTaxZone = null;
 
   @JsonProperty("taxDetailLines")
   private List<TaxDetailUpdateDto> taxDetailLines = null;
@@ -417,6 +420,22 @@ public class SupplierInvoiceUpdateDto {
   public void setBranchNumber(DtoValueString branchNumber) {
     this.branchNumber = branchNumber;
   }
+  
+  /**
+   * Get supplierTaxZone
+   * @return supplierTaxZone
+  **/
+  @ApiModelProperty(value = "")
+  public DtoValueString getSupplierTaxZone() {
+    return supplierTaxZone;
+  }
+
+  public void setSupplierTaxZone(DtoValueString supplierTaxZone) {
+    this.supplierTaxZone = supplierTaxZone;
+  }
+  
+  
+  
 
   public SupplierInvoiceUpdateDto taxDetailLines(List<TaxDetailUpdateDto> taxDetailLines) {
     this.taxDetailLines = taxDetailLines;
